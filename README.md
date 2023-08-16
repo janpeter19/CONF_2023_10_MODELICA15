@@ -4,7 +4,7 @@ presented at the 15th International Modelica Conference, Aachen, Germany, Octobe
 
 Figure 2 - You access the PDF-version of the notebook by pressing here
 [display pdf of notebook]
-(https://colab.research.google.com/github/janpeter19/CONF_2023_10_MODELICA15/blob/main/BPL_TEST2_Fedbatch.pdf)
+(https://colab.research.google.com/github/janpeter19/blob/CONF_2023_10_MODELICA15/blob/main/BPL_TEST2_Fedbatch.pdf)
 
 Figure 3 - You start up the notebook in Colab by pressing here
 [start BPL notebook](https://colab.research.google.com/github/janpeter19/CONF_2023_10_MODELICA15/blob/main/Notes_YEAST_COB_Batch_colab.ipynb)
