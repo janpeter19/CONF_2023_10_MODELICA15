@@ -12,5 +12,4 @@ Click on Runtime/Run all - and then wait a couple of minutes for the packages to
 Feel free to continue to interact with the notebook. Note, you need to have a gmail-address to use Google Colab.
 
 Figure 6 - You access the PDF-version of the notebook by pressing here
-[display pdf of notebook](https://github.com/janpeter19/CONF_2023_10_MODELICA15/blob/main/BPL_TEST2_Fedbatch.pdf)
-
+[display pdf of notebook](https://github.com/janpeter19/CONF_2023_10_MODELICA15/blob/main/Notes_BPL_TEST2_PID_Fedbatch_reg6_paper)
