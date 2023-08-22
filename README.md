@@ -13,3 +13,13 @@ Feel free to continue to interact with the notebook. Note, you need to have a gm
 
 Figure 6 - You access the PDF-version of the notebook by pressing here
 [display pdf of notebook](https://github.com/janpeter19/CONF_2023_10_MODELICA15/blob/main/Notes_BPL_TEST2_PID_Fedbatch_reg6_paper.pdf)
+
+Note that:
+* The script occassionaly get stuck during installation. Then just close the notebook and start from scratch.
+* Remember, you need to have a google-account!
+
+Just to be clear, no installation is done at your local computer.
+
+License information:
+* The binary-file with extension FMU is shared under the permissive MIT-license
+* The other files are shared under the GPL 3.0 license
