@@ -10,6 +10,7 @@
 # 2023-02-22 - Adjusted parDict, parLocation and simu('cont')
 # 2023-03-28 - Update FMU-explore 0.9.7
 # 2023-06-29 - Drop Td and N from parDict
+# 2023-08-22 - Adjusted for BPL_TEST2_PID_Fedbatch_reg6_linux_om_me.fmu
 #------------------------------------------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------------------------------------------
@@ -51,10 +52,10 @@ elif platform.system() == 'Linux':
    if flag_vendor in ['OM','om']:
       print('Linux - run FMU pre-comiled OpenModelica 1.21.0') 
       if flag_type in ['CS','cs']:         
-         fmu_model ='BPL_TEST2_PID_Fedbatch_reg5_linux_om_cs.fmu'    
+         fmu_model ='BPL_TEST2_PID_Fedbatch_reg6_linux_om_cs.fmu'    
          model = load_fmu(fmu_model, log_level=0) 
       if flag_type in ['ME','me']:         
-         fmu_model ='BPL_TEST2_PID_Fedbatch_reg5_linux_om_me.fmu'    
+         fmu_model ='BPL_TEST2_PID_Fedbatch_reg6_linux_om_me.fmu'    
          model = load_fmu(fmu_model, log_level=0)
    else:    
       print('There is no FMU for this platform')
