@@ -12,6 +12,7 @@
 # 2023-05-31 - Adjusted for FMPy
 # 2023-05-31 - Quick fix for OM FMU wtih small negative ethanol conc
 # 2023-05-31 - Adjusted to from importlib.meetadata import version
+# 2023-09-12 - Updated to FMU-explore 0.9.8 and introduced process diagram
 #------------------------------------------------------------------------------------------------------------------
 
 # Setup framework
@@ -19,7 +20,9 @@ import sys
 import platform
 import locale
 import numpy as np 
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+import matplotlib.image as img
+import zipfile  
 
 from fmpy import simulate_fmu
 from fmpy import read_model_description
@@ -87,6 +90,9 @@ else:
 # Simulation time
 global simulationTime; simulationTime = 12.0
 global prevFinalTime; prevFinalTime = 0
+
+# Provide process diagram on disk
+fmu_process_diagram ='BPL_GUI_YEAST_COB_Batch_process_diagram_om.png'
 
 # Dictionary of time discrete states
 timeDiscreteStates = {} 
@@ -602,6 +608,20 @@ def describe_general(name, decimals):
             print(description, ':', value)     
       else:
          print(description, ':', np.round(value, decimals), '[',unit,']')
+
+# Plot process diagram
+def process_diagram(fmu_model=fmu_model, fmu_process_diagram=fmu_process_diagram):   
+   try:
+       process_diagram = zipfile.ZipFile(fmu_model, 'r').open('documentation/processDiagram.png')
+   except KeyError:
+       print('No processDiagram.png file in the FMU, but try the file on disk.')
+       process_diagram = fmu_process_diagram
+   try:
+       plt.imshow(img.imread(process_diagram))
+       plt.axis('off')
+       plt.show()
+   except FileNotFoundError:
+       print('And no such file on disk either')
          
 # Describe framework
 def BPL_info():
@@ -616,6 +636,7 @@ def BPL_info():
    print(' - describe()  - describe culture, broth, parameters, variables with values/units')
    print()
    print('Note that both disp() and describe() takes values from the last simulation')
+   print('and the command process_diagram() brings up the main configuration')
    print()
    print('Brief information about a command by help(), eg help(simu)') 
    print('Key system information is listed with the command system_info()')
