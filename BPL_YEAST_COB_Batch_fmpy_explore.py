@@ -612,12 +612,12 @@ def describe_general(name, decimals):
 # Plot process diagram
 def process_diagram(fmu_model=fmu_model, fmu_process_diagram=fmu_process_diagram):   
    try:
-       process_diagram = zipfile.ZipFile(fmu_model, 'r').open('documentation/processDiagram.png')
+       processDiagram = zipfile.ZipFile(fmu_model, 'r').open('documentation/processDiagram.png')
    except KeyError:
        print('No processDiagram.png file in the FMU, but try the file on disk.')
-       process_diagram = fmu_process_diagram
+       processDiagram = fmu_process_diagram
    try:
-       plt.imshow(img.imread(process_diagram))
+       plt.imshow(img.imread(processDiagram))
        plt.axis('off')
        plt.show()
    except FileNotFoundError:
