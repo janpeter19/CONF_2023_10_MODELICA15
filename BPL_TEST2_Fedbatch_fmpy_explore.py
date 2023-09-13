@@ -33,9 +33,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as img
 import zipfile 
+
 from fmpy import simulate_fmu
 from fmpy import read_model_description
 import fmpy as fmpy
+
 from itertools import cycle
 from importlib.metadata import version 
 

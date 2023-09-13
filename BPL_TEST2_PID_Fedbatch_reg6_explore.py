@@ -11,7 +11,7 @@
 # 2023-03-28 - Update FMU-explore 0.9.7
 # 2023-06-29 - Drop Td and N from parDict
 # 2023-08-22 - Adjusted for BPL_TEST2_PID_Fedbatch_reg6_linux_om_me.fmu
-# 2023-09-12 - Updated to FMU-explore 0.9.8 and introduced process diagram
+# 2023-09-13 - Updated to FMU-explore 0.9.8 and introduced process diagram
 #------------------------------------------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------------------------------------------
@@ -93,6 +93,10 @@ else:
 
 # Simulation time
 global simulationTime; simulationTime = 20.0
+global prevFinalTime; prevFinalTime = 0
+
+# Provide process diagram on disk
+fmu_process_diagram ='Fig_Fedbatch2_GUI_openmodelica.png'
 
 # Dictionary of time discrete states
 #timeDiscreteStates = {'PIDreg.I' : model.get('PIDreg.I')[0]}
