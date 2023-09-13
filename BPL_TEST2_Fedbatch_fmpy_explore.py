@@ -146,8 +146,8 @@ parDict['Y'] = 0.5
 parDict['qSmax'] = 1.0
 parDict['Ks'] = 0.1
 
-parDict['feedtank.S_in'] = 300.0
-parDict['feedtank.V_0'] = 10.0
+parDict['feedtank_S_in'] = 300.0
+parDict['feedtank_V_0'] = 10.0
 parDict['mu_feed'] = 0.10
 parDict['t_start'] = 3.0
 parDict['F_start'] = 1.33e-3
@@ -162,8 +162,8 @@ parLocation['Y'] = 'bioreactor.culture.Y'
 parLocation['qSmax'] = 'bioreactor.culture.qSmax'
 parLocation['Ks'] = 'bioreactor.culture.Ks'
 
-parLocation['feedtank.S_in'] = 'feedtank.c_in[2]'
-parLocation['feedtank.V_0'] = 'feedtank.V_0'
+parLocation['feedtank_S_in'] = 'feedtank.c_in[2]'
+parLocation['feedtank_V_0'] = 'feedtank.V_0'
 parLocation['mu_feed'] = 'dosagescheme.mu_feed'
 parLocation['t_start'] = 'dosagescheme.t_start'
 parLocation['F_start'] = 'dosagescheme.F_start'
