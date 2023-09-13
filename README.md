@@ -4,6 +4,8 @@ to be presented at the 15th International Modelica Conference, Aachen, Germany, 
 
 Figure 2 - You start up the notebook in Colab by pressing here
 [start BPL notebook](https://colab.research.google.com/github/janpeter19/CONF_2023_10_MODELICA15/blob/main/BPL_TEST2_Fedbatch_colab.ipynb)
+or here
+[start BPL notebook with FMPy](https://colab.research.google.com/github/janpeter19/CONF_2023_10_MODELICA15/blob/main/BPL_TEST2_Fedbatch_fmpy_colab.ipynb)
 
 Figure 3 - You start up the notebook in Colab by pressing here
 [start BPL notebook](https://colab.research.google.com/github/janpeter19/CONF_2023_10_MODELICA15/blob/main/BPL_YEAST_COB_Batch_colab.ipynb)
