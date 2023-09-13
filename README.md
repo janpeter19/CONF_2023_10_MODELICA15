@@ -20,6 +20,12 @@ or here
 Click on Runtime/Run all - and then wait a couple of minutes for the packages to load, finally the script is run in seconds.
 Feel free to continue to interact with the notebook. Note, you need to have a gmail-address to use Google Colab.
 
+If you are interested in more complex models closer to the industrial reality, take a look at the repositories:
+
+- BPL\_YEAST\_AIR\_Fedbatch - simulates yeast production and include by-product formation and dissolved oxygen control
+- BPL\_CHO\_Fedbatch - mammalian cells CHO and include by-product formation and recombinant protein production
+- BPL\_IEC_operation  - ion exhange chromatography used for separation of protein product from other proteins 
+
 Note that:
 * The script occassionaly get stuck during installation. Then just close the notebook and start from scratch.
 * Remember, you need to have a google-account!
